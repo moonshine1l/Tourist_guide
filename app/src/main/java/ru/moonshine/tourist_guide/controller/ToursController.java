@@ -1,6 +1,7 @@
 package ru.moonshine.tourist_guide.controller;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import ru.moonshine.tourist_guide.R;
+import ru.moonshine.tourist_guide.activity.TourPage;
 import ru.moonshine.tourist_guide.model.Tours;
 
 public class ToursController extends RecyclerView.Adapter<ToursController.ToursView> {
@@ -40,6 +42,14 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
         holder.tourImage.setImageResource(imageId);
         holder.tourTitle.setText(tours.get(position).getTitle());
         holder.tourPrice.setText(tours.get(position).getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, TourPage.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
