@@ -5,12 +5,82 @@ public class Tours {
     String title;
     String image;
     String price;
+    String tourDescription;
+    String firstSight;
+    String firstSightDescription;
+    String secondSight;
+    String secondSightDescription;
+    String thirdSight;
+    String thirdSightDescription;
 
-    public Tours(int id, String title, String image, String price) {
+    public Tours(int id, String title, String image, String price, String tourDescription, String firstSight, String firstSightDescription, String secondSight, String secondSightDescription, String thirdSight, String thirdSightDescription) {
         this.id = id;
         this.title = title;
         this.image = image;
         this.price = price;
+        this.tourDescription = tourDescription;
+        this.firstSight = firstSight;
+        this.firstSightDescription = firstSightDescription;
+        this.secondSight = secondSight;
+        this.secondSightDescription = secondSightDescription;
+        this.thirdSight = thirdSight;
+        this.thirdSightDescription = thirdSightDescription;
+    }
+
+    public String getTourDescription() {
+        return tourDescription;
+    }
+
+    public void setTourDescription(String tourDescription) {
+        this.tourDescription = tourDescription;
+    }
+
+    public String getFirstSight() {
+        return firstSight;
+    }
+
+    public void setFirstSight(String firstSight) {
+        this.firstSight = firstSight;
+    }
+
+    public String getFirstSightDescription() {
+        return firstSightDescription;
+    }
+
+    public void setFirstSightDescription(String firstSightDescription) {
+        this.firstSightDescription = firstSightDescription;
+    }
+
+    public String getSecondSight() {
+        return secondSight;
+    }
+
+    public void setSecondSight(String secondSight) {
+        this.secondSight = secondSight;
+    }
+
+    public String getSecondSightDescription() {
+        return secondSightDescription;
+    }
+
+    public void setSecondSightDescription(String secondSightDescription) {
+        this.secondSightDescription = secondSightDescription;
+    }
+
+    public String getThirdSight() {
+        return thirdSight;
+    }
+
+    public void setThirdSight(String thirdSight) {
+        this.thirdSight = thirdSight;
+    }
+
+    public String getThirdSightDescription() {
+        return thirdSightDescription;
+    }
+
+    public void setThirdSightDescription(String thirdSightDescription) {
+        this.thirdSightDescription = thirdSightDescription;
     }
 
     public int getId() {
