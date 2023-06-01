@@ -42,13 +42,7 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
         holder.tourImage.setImageResource(imageId);
         holder.tourTitle.setText(tours.get(position).getTitle());
         holder.tourPrice.setText(tours.get(position).getPrice());
-        holder.tourDescription.setText(tours.get(position).getTourDescription());
-        holder.firstSight.setText(tours.get(position).getFirstSight());
-        holder.firstSightDescription.setText(tours.get(position).getFirstSightDescription());
-        holder.secondSight.setText(tours.get(position).getSecondSight());
-        holder.secondSightDescription.setText(tours.get(position).getSecondSightDescription());
-        holder.thirdSight.setText(tours.get(position).getThirdSight());
-        holder.thirdSightDescription.setText(tours.get(position).getThirdSightDescription());
+
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,13 +77,6 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
         ImageView tourImage;
         TextView tourTitle;
         TextView tourPrice;
-        TextView tourDescription;
-        TextView firstSight;
-        TextView firstSightDescription;
-        TextView secondSight;
-        TextView secondSightDescription;
-        TextView thirdSight;
-        TextView thirdSightDescription;
 
 
         public ToursView(@NonNull View itemView) {
@@ -98,13 +85,7 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
             tourImage = itemView.findViewById(R.id.ImageView);
             tourTitle = itemView.findViewById(R.id.TourTitle);
             tourPrice = itemView.findViewById(R.id.tourPrice);
-            tourDescription = itemView.findViewById(R.id.pageTitle);
-            firstSight = itemView.findViewById(R.id.firstSight);
-            firstSightDescription = itemView.findViewById(R.id.firstSightDescription);
-            secondSight = itemView.findViewById(R.id.secondSight);
-            secondSightDescription = itemView.findViewById(R.id.secondSightDescription);
-            thirdSight = itemView.findViewById(R.id.thirdSight);
-            thirdSightDescription = itemView.findViewById(R.id.thirdSightDescription);
+
         }
     }
 }

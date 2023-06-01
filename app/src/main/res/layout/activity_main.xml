@@ -30,15 +30,4 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.774" />
 
-    <SearchView
-        android:layout_width="358dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="12dp"
-        app:circularflow_radiusInDP="20dp"
-        app:layout_constraintCircleRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
