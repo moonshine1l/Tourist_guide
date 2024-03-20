@@ -1,7 +1,9 @@
 package ru.moonshine.tourist_guide.model;
 
+import android.text.Spanned;
+
 public class Tours {
-    int id;
+    int id, type;
     String title;
     String image;
     String price;
@@ -13,7 +15,7 @@ public class Tours {
     String thirdSight;
     String thirdSightDescription;
 
-    public Tours(int id, String title, String image, String price, String tourDescription, String firstSight, String firstSightDescription, String secondSight, String secondSightDescription, String thirdSight, String thirdSightDescription) {
+    public Tours(int id, int type, String title, String image, String price, String tourDescription, String firstSight, String firstSightDescription, String secondSight, String secondSightDescription, String thirdSight, String thirdSightDescription) {
         this.id = id;
         this.title = title;
         this.image = image;
@@ -25,6 +27,15 @@ public class Tours {
         this.secondSightDescription = secondSightDescription;
         this.thirdSight = thirdSight;
         this.thirdSightDescription = thirdSightDescription;
+        this.type = type;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 
     public String getTourDescription() {

@@ -6,12 +6,15 @@ import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import ru.moonshine.tourist_guide.R;
@@ -23,10 +26,13 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
     Context context;
     List<Tours> tours;
 
+
     public ToursController(Context context, List<Tours> tours) {
         this.context = context;
         this.tours = tours;
+
     }
+
 
     @NonNull
     @Override
@@ -72,7 +78,7 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
         return tours.size();
     }
 
-    public static final class ToursView extends RecyclerView.ViewHolder{
+    public static final class ToursView extends RecyclerView.ViewHolder {
 
         ImageView tourImage;
         TextView tourTitle;
@@ -89,3 +95,10 @@ public class ToursController extends RecyclerView.Adapter<ToursController.ToursV
         }
     }
 }
+
+
+
+
+
+
+
